@@ -34,15 +34,15 @@ h1 {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
 }
-.post h3{
-    font-size: 1.5rem;
-    font-weight: 800;
-    line-height: 1.6rem;
-    color: #6B7280;
+.post h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.6rem;
+  color: #6b7280;
 }
 .post p {
-    padding: 0.7rem 0;
-    font-weight: 500;
-    font-size: 1rem;
-    color: #6B7280;
+  padding: 0.7rem 0;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #6b7280;
 }
