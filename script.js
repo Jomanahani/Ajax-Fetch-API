@@ -1,4 +1,9 @@
+// access html elements
 const Container = document.querySelector(".container");
+const plusButo = document.querySelector("#plus");
+const optionsBut = document.querySelector(".optionsBut");
+const Form = document.querySelector("#form");
+const closeBout = document.querySelector(".close");
 // create array to hold all posts
 let allPosts = [];
 
@@ -20,6 +25,7 @@ function displayData(arr) {
   });
 }
 
+// function to create element in html
 function createPost(title, body) {
   const postDiv = document.createElement("div");
   postDiv.classList.add("post");
@@ -34,3 +40,13 @@ function createPost(title, body) {
   postDiv.appendChild(Body);
 }
 
+plusButo.onclick = () => {
+  plusButo.style.display = "none";
+  optionsBut.style.display = "block";
+  Form.style.display = "block";
+};
+closeBout.onclick = () => {
+  plusButo.style.display = "block";
+  Form.style.display = "none";
+  optionsBut.style.display = "none";
+};

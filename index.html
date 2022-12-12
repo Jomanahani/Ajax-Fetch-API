@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Posts</title>
   </head>
   <body>
@@ -13,15 +20,43 @@
     </header>
     <main>
       <section class="container">
-            <!-- <div class="post">
+        <!-- <div class="post">
                 <h3>TITLE</h3>
                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rerum ut harum autem explicabo </P>
             </div>
             <div class="post">
                 <h3>TITLE</h3>
                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rerum ut harum autem explicabo </P>
-            </div> -->
-        </section>
+              </div> -->
+      </section>
+      <section class="addPost">
+        <div id="form">
+          <h4>ADD NEW POST</h4>
+          <form action="post">
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Enter Post Title"
+            />
+            <textarea name="body" rows="4" cols="50"
+            placeholder="Write your post..."
+
+            >
+</textarea
+            >
+          </form>
+        </div>
+      </section>
+      <footer class="formButtons">
+        <a href="#form"
+          ><button id="plus"><i class="fa-solid fa-plus"></i></button>
+        </a>
+        <div class="optionsBut">
+          <button class="close"><i class="fa-solid fa-xmark"></i></button>
+          <button><i class="fa-solid fa-check"></i></button>
+        </div>
+      </footer>
     </main>
     <script src="./script.js"></script>
   </body>
